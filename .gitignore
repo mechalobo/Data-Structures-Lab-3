@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+#XCode artifacts
+*.xcodeproj
+
 # Compiled Object files
 *.slo
 *.lo
