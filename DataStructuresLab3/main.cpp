@@ -6,9 +6,20 @@
 //
 
 #include <iostream>
+#include <string>
+#include "ComplexNumCalc.h"
 
-int main(int argc, const char * argv[]) {
+using namespace std;
+
+int main() {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
+    cout << "Creating ComplexNumCalc object..." << endl;
+    
+    ComplexNumCalc number;
+    number.setNumOne(5);
+    
+    cout << "Value of number is " << number.getNumOne() << endl;
     return 0;
 }
