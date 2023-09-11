@@ -7,6 +7,7 @@
 
 #ifndef ComplexNumCalc_h
 #define ComplexNumCalc_h
+
 class ComplexNumCalc {
 private:
     int num1;
