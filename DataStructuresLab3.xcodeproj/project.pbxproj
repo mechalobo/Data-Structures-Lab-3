@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		943E4B172AAFA5D200F12D8E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943E4B162AAFA5D200F12D8E /* main.cpp */; };
+		943E4B222AB126F300F12D8E /* ComplexNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943E4B202AB126F300F12D8E /* ComplexNumber.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		943E4B132AAFA5D200F12D8E /* DataStructuresLab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresLab3; sourceTree = BUILT_PRODUCTS_DIR; };
 		943E4B162AAFA5D200F12D8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		943E4B202AB126F300F12D8E /* ComplexNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComplexNumber.cpp; sourceTree = "<group>"; };
+		943E4B212AB126F300F12D8E /* ComplexNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexNumber.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				943E4B162AAFA5D200F12D8E /* main.cpp */,
+				943E4B202AB126F300F12D8E /* ComplexNumber.cpp */,
+				943E4B212AB126F300F12D8E /* ComplexNumber.h */,
 			);
 			path = DataStructuresLab3;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943E4B222AB126F300F12D8E /* ComplexNumber.cpp in Sources */,
 				943E4B172AAFA5D200F12D8E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
