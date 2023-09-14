@@ -10,19 +10,19 @@
 
 using namespace std;
 
-void ComplexNumber::setReal(int real) {
+void ComplexNumber::setReal(double real) {
     this->real = real;
 }
 
-int ComplexNumber::getReal() const {
+double ComplexNumber::getReal() const {
     return this->real;
 }
 
-void ComplexNumber::setImaginary(int imaginary) {
+void ComplexNumber::setImaginary(double imaginary) {
     this->imaginary = imaginary;
 }
 
-int ComplexNumber::getImaginary() const {
+double ComplexNumber::getImaginary() const {
     return this-> imaginary;
 }
 
@@ -31,7 +31,7 @@ ComplexNumber::ComplexNumber(){
     this->imaginary = 0;
 }
 
-ComplexNumber::ComplexNumber(int real, int imaginary) {
+ComplexNumber::ComplexNumber(double real, double imaginary) {
     this->real = real;
     this->imaginary = imaginary;
 }
@@ -44,17 +44,31 @@ void ComplexNumber::print() const {
     }
 }
 
-ComplexNumber ComplexNumber::operator+(const ComplexNumber& right) {
-    ComplexNumber temp;
-    int tempReal;
-    int tempImag;
+void ComplexNumber::operator+(const ComplexNumber& right) {
     
-    tempReal = this->real + right.real;
-    tempImag = this->imaginary + right.imaginary;
+    this->real += right.real;
+    this->imaginary += right.imaginary;
+}
+
+void ComplexNumber::operator-(const ComplexNumber& right) {
+    this->real -= right.getReal();
+    this->imaginary -= right.getImaginary();
+}
+
+void ComplexNumber::operator*(double scalar) {
+    this->real *= scalar;
+    this->imaginary *= scalar;
     
-    temp.setReal(tempReal);
-    temp.setImaginary(tempImag);
-    
-    return temp;
+}
+
+void ComplexNumber::operator/(double scalar) {
+    if(scalar != 0.0) {
+        this->real /= scalar;
+        this->imaginary /= scalar;
+    }
+}
+
+bool ComplexNumber::operator==(const ComplexNumber& cn) {
+    return ((this->real == cn.real) && (this->imaginary == cn.imaginary));
 }
 

@@ -13,20 +13,22 @@
 
 class ComplexNumber {
 private:
-    int real;
-    int imaginary;
+    double real;
+    double imaginary;
     
 public:
-    void setReal(int);
-    int getReal() const;
-    void setImaginary(int);
-    int getImaginary() const;
+    void setReal(double);
+    double getReal() const;
+    void setImaginary(double);
+    double getImaginary() const;
     ComplexNumber();
-    ComplexNumber(int, int);
+    ComplexNumber(double, double);
     void print() const;
-    ComplexNumber operator+(const ComplexNumber&);
-    ComplexNumber operator-(const ComplexNumber&);
-    
+    void operator+(const ComplexNumber&);
+    void operator-(const ComplexNumber&);
+    void operator*(double);
+    void operator/(double);
+    bool operator==(const ComplexNumber&);
     
 };
 
