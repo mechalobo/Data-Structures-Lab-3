@@ -63,7 +63,7 @@ void ComplexNumber::operator*(double scalar) {
 
 void ComplexNumber::operator/(double scalar) {
     if(scalar != 0.0) {
-        this->real /= scalar;
+        this->real /= scalar * 1.0;
         this->imaginary /= scalar;
     }
 }
